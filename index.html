@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/custom.css">
+  <title>Kelas Matematika</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="">Produk</a>
+            </li>
+            <li>
+              <a href="">Program</a>
+            </li>
+            <li>
+              <a href="">Promo</a>
+            </li>
+            <li>
+              <a href="">Testimoni</a>
+            </li>
+            <li>
+              <a href="">Kurikulum</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1>Belajar Matematika Mudah, Nyaman, Senang dan Praktis</h1>
+        <p>Kelas Matematika untuk semua usia, Belajar kapan saja! Dimana saja! </p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">$1.99</p>
+        <p>Daring</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">$3.99</p>
+        <p>Luring</p>
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <header class="anak-dini">
+        <h3>USIA DINI</h3>
+      </div>
+      <div class="feature">
+        <header class="sd">
+        <h3>SD/MI</h3>
+      </div>
+      <div class="feature">
+        <header class="smp">
+        <h3>SMP/MTs</h3>
+      </div>
+      <div class="feature">
+        <header class="sma-smk">
+        <h3>SMA/SMK/MA</h3>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="assets/images/education-online.png" alt="Yummy Taco" class="about__mockup">
+      <div class="about__details">
+        <h2>Bimbingan Belajar Kelas Matematika</h2>
+        <p>Bimbingan belajar profesional dengan tentor yang ramah, smart dan menyenangkan</p>
+        <p>Startegi pembelajaran matematika yag diterapkan sangat praktis dan relaistis</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x203" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+      <img src="https://source.unsplash.com/random/205x205" alt="">
+      <img src="https://source.unsplash.com/random/206x206" alt="">
+      <img src="https://source.unsplash.com/random/207x207" alt="">
+      <img src="https://source.unsplash.com/random/207x208" alt="">
+      <img src="https://source.unsplash.com/random/207x209" alt="">
+      <img src="https://source.unsplash.com/random/207x210" alt="">
+    </section>
+  </div>
+
+  <script src="assets/js/function.js"></script>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
